@@ -1,0 +1,18 @@
+{
+    "name": "genesisoft/m2-weltpixel-backend-ext",
+    "description": "Módulo de extensão do Weltpixel-Backend",
+    "require": {
+        "weltpixel/m2-weltpixel-backend": "*"
+    },
+    "type": "magento2-module",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Genesisoft\\BackendExt\\": ""
+        }
+    }
+}

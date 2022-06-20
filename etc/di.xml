@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="WeltPixel\Backend\Helper\License" type="Genesisoft\BackendExt\Preference\WeltPixel\Backend\Helper\License" />
+    <preference for="WeltPixel\Backend\Observer\PredispatchAdminActionControllerObserver" type="Genesisoft\BackendExt\Preference\WeltPixel\Backend\Observer\PredispatchAdminActionControllerObserver" />
+    <preference for="WeltPixel\Backend\Block\Adminhtml\ModulesVersion" type="Genesisoft\BackendExt\Preference\WeltPixel\Backend\Block\Adminhtml\ModulesVersion"/>
+
+<!--Desabilitamos os plugins para não exibir mensagem de falta de chave de acesso na administração.-->
+<!--Será necessário acrescentar aqui o restante dos módulos da Weltpixel também, a medida que houver necessidade.-->
+    <type name="Magento\Backend\App\AbstractAction">
+        <plugin name="weltpixel-advance_category_sorting-utility" disabled="true"/>
+        <plugin name="weltpixel-advance_recently_viewed-utility" disabled="true"/>
+        <plugin name="weltpixel-advancedwishlist-utility" disabled="true"/>
+        <plugin name="weltpixel-ajaxinfinitescroll-utility" disabled="true"/>
+        <plugin name="weltpixel-categorypage-utility" disabled="true"/>
+        <plugin name="weltpixel-cmsblockscheduler-utility" disabled="true"/>
+        <plugin name="weltpixel-customfooter-utility" disabled="true"/>
+        <plugin name="weltpixel-customheader-utility" disabled="true"/>
+        <plugin name="weltpixel-designelements-utility" disabled="true"/>
+        <plugin name="weltpixel-enhancedemail-utility" disabled="true" />
+        <plugin name="weltpixel-frontendoptions-utility" disabled="true"/>
+        <plugin name="weltpixel-fullpagescroll-utility" disabled="true"/>
+        <plugin name="weltpixel-googletagmanager-utility"  disabled="true"/>
+        <plugin name="weltpixel-googlecards-utility" disabled="true"/>
+        <plugin name="weltpixel-lazyloading-utility" disabled="true"/>
+        <plugin name="weltpixel-layerenavigation-utility" disabled="true"/>
+        <plugin name="weltpixel-multistore-utility" disabled="true"/>
+        <plugin name="weltpixel-navigationlinks-utility" disabled="true"/>
+        <plugin name="weltpixel-newsletter-utility" disabled="true"/>
+        <plugin name="weltpixel-owlcarouselslider-utility" disabled="true"/>
+        <plugin name="weltpixel-productpage-utility"  disabled="true"/>
+        <plugin name="weltpixel-productlabels-utility" disabled="true"/>
+        <plugin name="weltpixel-quickcart-utility" disabled="true"/>
+        <plugin name="weltpixel-quickview-utility" disabled="true"/>
+        <plugin name="weltpixel-searchautocomplete-utility" disabled="true"/>
+        <plugin name="weltpixel-sitemap-utility" disabled="true"/>
+        <plugin name="weltpixel-smartproducttabs-utility" disabled="true"/>
+        <plugin name="weltpixel-sociallogin-utility" disabled="true"/>
+        <plugin name="weltpixel-speedoptimization-utility" disabled="true"/>
+        <plugin name="weltpixel-thankyoupage-utility" disabled="true"/>
+        <plugin name="weltpixel-userprofile-utility" disabled="true"/>
+    </type>
+</config>
